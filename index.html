@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+</head>
+<body>
+    <h1>Bibliothek</h1>
+    <div>
+       <form class="mainbtn" method="get" id="book-form">
+        <div>
+            <label for="name">Titel</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="autor">Autor</label>
+            <input type="text" id="autor">
+        </div>
+            <label for="genre">Genre</label>
+            <input type="text" id="genre">
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit" id="submit">Speichern</button>
+        </div>
+       </form>
+    </div>
+    <div>
+        <ul id="bookList"></ul> 
+    </div>
+        <div class="mainbtn">
+            <button id="download-pdf">Liste als PDF speichern</button>
+            <button id="clear">Liste Löschen</button>
+        </div>
+</body>
+</html>
